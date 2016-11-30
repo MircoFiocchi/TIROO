@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="Estilo1.css">
+    <meta charset="UTF-8">
+    <title>Problema físico de "Tiro Oblicuo"</title>
+</head>
+<body>
+<script type="text/javascript" src="./js/calculos.js"></script>
+
+<div class="titulo">
+    <h1>
+        CALCULO TIRO OBLICUO
+    </h1></div>
+<br>
+<br>
+<div id="atencion">
+<fieldset name="Datos necesarios:">
+
+    Velocidad inicial
+    <input type="text" id="V" onchange="javascript:to.setVel()">
+    <select id="UnidadV" onchange="javascript:to.setUVelo()">
+        <option value="ms">m/s</option>
+        <option value="kmh">km/h</option>
+    </select>
+    <br>
+    Angulo inicial
+    <input type="text" id="tita" onchange="javascript:to.setAlfa()">
+    <select id="UnidadTita" onchange="javascript:to.setUAlfa()">
+        <option value="gr">grados</option>
+        <option value="rad">radianes</option>
+    </select>
+    <br>
+    <button onclick="javascript:to.calculo()">Calcular</button>
+</fieldset>
+</div>
+<br>
+<br>
+<div id="atencion2">
+<h3>Resultados</h3>
+
+<p> ANGULO <strong id="RAngulo">-</strong>(rad)<br>
+    VELOCIDAD <strong id="RVelocidad">-</strong>(m/s)<br>
+    ALTURA: <strong id="RAltura">-</strong>(mts)  en <strong id="RTiempoMx">-</strong>(seg)<br>
+    DISTANCIA <strong id="RdTotal">-</strong>(mts) en <strong id="RtT">-</strong>(seg)</p><br>
+
+<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/hGjyJ2hpbVA" frameborder="0" allowfullscreen></iframe>
+<br> -->
+    <canvas id="micanvas" width="300px" height="300px"></canvas>
+</div>
+</body>
+
+</html>
+
+
+</body>
